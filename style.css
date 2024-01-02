@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(#5a95ff,#ff5c5c);
+}
+.app {
+  font-family: "Poppins", sans-serif;
+  width: min(95vw, 31.25em);
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 1.875em;
+  /* top: 3.75em; */
+}
+.container {
+  background-color: #f1f8fb;
+  padding: 2em 2.5em 0 2.5em;
+  border-radius: 0.8em;
+  box-shadow: 0 1em 2em rgba(0, 0, 0, 0.3);
+}
+.logo{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1em;
+}
+.logo i{
+  font-size: 2em;
+  color: #ffffff;
+  background: linear-gradient(#5a95ff,#ff5c5c);
+  border-radius: 50%;
+  height: 2em;
+  width: 2em;
+  text-align: center;
+  line-height: 2em;
+}
+
+#wrapper,
+.formate-in-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 9fr 4fr;
+  gap: 1em;
+  align-items: center;
+}
+#wrapper input {
+  width: 100%;
+  background-color: transparent;
+  color: #111111;
+  font-size: 0.9em;
+  border: none;
+  border-bottom: 2px solid #d1d3d4;
+  padding: 1em 0.5em;
+  text-wrap: wrap;
+}
+/* changing the color of input bottom border */
+#wrapper input:focus {
+  border-color: #5a93ff;
+  outline: none;
+}
+
+.buttons {
+  position: relative;
+  border-radius: 0.5em;
+  font-weight: 500;
+  font-size: 1em;
+  background-color: #5a95ff;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0.8em 0.5em;
+}
+.clear{
+    background-color: #ff5c5c;
+    display: none;
+}
+
+#error {
+  text-align: center;
+  margin-top: 1.5em;
+  background-color: #ffffff;
+  color: red;
+  padding: 1em 0;
+  border-radius: 2em;
+  display: none;
+}
+
+#task {
+  margin-top: 0.9em;
+  border-radius: 0.5em;
+  width: 100%;
+  position: relative;
+  /* background-color: #ffd55c; */
+}
+
+/* Adding scrollbar */
+#task .list{
+  /* background-color: #ff5c5c; */
+  position: relative;
+  width: 100%;
+  max-height: 368px;
+  overflow: auto;
+  padding:0 5px;
+}
+
+/* Formatting the scrollbar */
+#task .list::-webkit-scrollbar{
+  width: 10px;
+}
+#task .list::-webkit-scrollbar-track{
+  background-color: #ffffff;
+  border-radius: 1em;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.3);
+}
+#task .list::-webkit-scrollbar-thumb{
+  background: linear-gradient(#5a93ff,#ff5c5c);
+  border-radius: 1em;
+}
+#task .list::-webkit-scrollbar-button{
+  background-color: transparent;
+  border-radius: 1em;
+}
+#pending-tasks {
+  margin-left: 0.5em;
+}
+.task {
+  background-color: #ffffff;
+  padding: 0.8em 1em;
+  display: grid;
+  grid-template-columns: 1fr 8fr 2fr 2fr;
+  gap: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.3);
+  align-items: center;
+  cursor: pointer;
+  margin: 1em 0;
+}
+.task input[type="checkbox"] {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 2px solid #ff5c5c;
+  appearance: none;
+  background-color: transparent;
+}
+.task input[type="checkbox"]:checked {
+  border-color: #5a95ff;
+  background-color: #5a95ff;
+}
+.task input[type="checkbox"]:checked::after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  /* background-color: red; */
+  border-bottom: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  transform: rotate(315deg);
+  left: 2px;
+  top: 3px;
+}
+.task span {
+  font: 0.9em;
+  font-weight: 400;
+  word-break: break-all;
+}
+.task button {
+  color: #ffffff;
+  width: 100%;
+  padding: 1em 0;
+  border-radius: 0.5em;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.edit {
+  background-color: #5a95ff;
+}
+.delete {
+  background-color: #ff5c5c;
+}
+#pending-tasks span {
+  color: #5a95ff;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #a0a0a0;
+}
