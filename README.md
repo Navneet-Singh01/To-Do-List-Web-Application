@@ -20,6 +20,20 @@ This is a to-do list web application, designed to assist you in efficiently mana
 - CSS
 - JavaScript
 
+## Screenshots
+
+### 1. Screenshot 1
+
+![screenshot](./screenshots/screenshot-1.png)
+
+### 2. Screenshot 2
+
+![screenshot](./screenshots/screenshot-2.png)
+
+### 3. Screenshot 3
+
+![screenshot](./screenshots/screenshot-3.png)
+
 ## Usage
 
 ### 1. Adding a Task:
