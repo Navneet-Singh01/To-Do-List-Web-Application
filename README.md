@@ -2,6 +2,10 @@
 
 This is a to-do list web application, designed to assist you in efficiently managing and organizing your tasks. This application not only supports fundamental CRUD (Create, Read, Update, Delete) operations but also ensures that your task data persists even when you refresh or reload the page.
 
+## Demo
+
+[Link to live demo](https://navneet-singh01.github.io/To-Do-List-Web-Application/)
+
 ## Features
 
 1. **Task Management**: Seamlessly create, read, update, and delete tasks with an intuitive user interface.
